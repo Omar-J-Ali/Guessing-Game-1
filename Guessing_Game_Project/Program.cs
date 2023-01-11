@@ -19,4 +19,5 @@ if (guessNumber > 10 || guessNumber < 1)
 {
     Console.WriteLine("Please pick numbers between 1-10");
 }
+Console.WriteLine("Made minor change to check username");
 
