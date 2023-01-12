@@ -8,12 +8,15 @@ int myGuess = 8;
 #endregion
 
 Console.WriteLine("What is the number you guess, guess a number between 1-10?");
-int guessNumber = Convert.ToInt32(Console.ReadLine());
-while (true)
-{
+int attempt = 0;
+while (attempt < 3)
+{ 
+    int guessNumber = Convert.ToInt32(Console.ReadLine());
+
     if (guessNumber == myGuess)
     {
         Console.WriteLine("That is Right");
+        Environment.Exit(1);
     }
     else if (guessNumber != myGuess)
     {
@@ -23,9 +26,6 @@ while (true)
     {
         Console.WriteLine("Please pick numbers between 1-10");
     }
-    if (guessNumber != myGuess)
-    {
-        Console.WriteLine("You chose poorly");
-    }
+    attempt++;
 }
     
