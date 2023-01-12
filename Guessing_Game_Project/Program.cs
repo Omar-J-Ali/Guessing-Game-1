@@ -9,8 +9,8 @@ int myGuess = 8;
 
 Console.WriteLine("What is the number you guess, guess a number between 1-10?");
 int attempt = 0;
-while (attempt < 3)
-{ 
+do
+{
     int guessNumber = Convert.ToInt32(Console.ReadLine());
 
     if (guessNumber == myGuess)
@@ -28,4 +28,11 @@ while (attempt < 3)
     }
     attempt++;
 }
+while (attempt < 3);
+    
+       
+    
+
+
+
     
